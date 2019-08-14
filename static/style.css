@@ -1,0 +1,13 @@
+li {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+}
+button {
+  margin-left: 30px;
+}
+
+.purple {
+  color: purple;
+}
