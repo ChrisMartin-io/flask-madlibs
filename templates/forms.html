@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<h1>Madlibs</h1>
+
+{% endblock %}
+
+{% block content %}
+
+<form action="/madlib">
+  <ul>
+    {{ list }}
+    {% for word in list %}
+    <li>{{ word }}: <input name="{{ word }}"></li>
+    {% endfor %}
+  </ul>
+  <button class="btn-dark" type='submit'>Go!</button>
+</form>
+{% endblock %}
+
+{% block footer %} 
+
+<p>Thank you for visiting!</p>
+
+{% endblock %}

@@ -13,15 +13,13 @@
 
 <body>
 
-  <h1>Madlibs</h1>
-  <form action="/madlib">
-    <ul>
-      {% for word in list %}
-      <li>{{ word }}: <input name="{{ word }}"></li>
-      {% endfor %}
-    </ul>
-    <button class="btn-dark" type='submit'>Go!</button>
-  </form>
+  {% block title %} THIS IS THE TITLE {% endblock %}
+
+  {% block content %} THIS IS THE BODY CONTENT {% endblock %}
+
+  {% block footer %} THIS IS THE FOOTER {% endblock %}
+ 
+
 </body>
 
 </html>

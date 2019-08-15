@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<h1>Madlibs</h1>
+
+{% endblock %}
+
+{% block content %}
+
+{{ list }}
+<form action="/forms">
+  <select class="selectpicker" name="dropdown">
+
+{% for story in list %}
+    <option value="{{ story }}">Story</option>
+{% endfor %}
+
+  </select>
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}
+
+{% block footer %} 
+
+<p>Thank you for visiting!</p>
+
+{% endblock %}
